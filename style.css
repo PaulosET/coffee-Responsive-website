@@ -138,13 +138,14 @@ nav{
     transition: all 0.3s linear;
 }
   }
-.links_container {
-    height: auto !important;
-}
+
 .show-link{
     height:200px
 }
     }
+.links_container {
+    height: auto !important;
+}
 .section{
 height: 80vh;
 width: 100%;
