@@ -56,7 +56,7 @@ let position=element.offsetTop-navheight;
     if (!fixedNav) {
       position = position - navheight;
     }
-    if (navheight > 82) {
+    if (navheight > 100) {
       position = position + containerheight;
     }
 
