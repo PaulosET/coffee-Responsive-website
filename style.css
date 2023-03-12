@@ -137,7 +137,10 @@ nav{
     overflow: hidden;
     transition: all 0.3s linear;
 }
-
+  }
+.links_container {
+    height: auto !important;
+}
 .show-link{
     height:200px
 }
