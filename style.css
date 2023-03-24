@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
-*{
+body{
     
     margin: 0px;
     padding: 0px;
-
+   width: 100%;
+   overflow-x: hidden;
     box-sizing: border-box;
+    
     font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
 }
@@ -14,6 +16,7 @@ html {
 }
 body{
     background: rgb(250, 245, 238);
+    
 }
 h1{
  font-size: 3rem;
@@ -28,28 +31,9 @@ a{
 li{
     list-style: none;
 }
-.logo-img{
-    height: 100px;
-}
-.logo{
-    padding: 0rem 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.toggle{
-    font-size: 1.7rem;
-    background: transparent;
-    border: transparent;
-}
-header{
-min-height: 100vh;
-
-    background: linear-gradient(rgba(188, 161, 130, 0.5), rgba(0, 0, 0, 0.7)),
-        url(./banner.jpg) center/cover no-repeat;
-    
-}
 @media(min-width:800px){
+    
+    
     .toggle{
         display: none;
  
@@ -81,10 +65,40 @@ min-height: 100vh;
         
         
     }
+        .links_container {
+            height: auto !important;
+        }
 .link li a:hover{
     color: rgb(197, 116, 18);
 }
+
 }
+.logo-img {
+    height: 100px;
+}
+
+.logo {
+    padding: 0rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle {
+    font-size: 1.7rem;
+    background: transparent;
+    border: transparent;
+}
+
+header {
+    min-height: 100vh;
+    min-height: 100vw;
+
+    background: linear-gradient(rgba(188, 161, 130, 0.5), rgba(0, 0, 0, 0.7)),
+        url(./banner.jpg) center/cover no-repeat;
+
+}
+
 .banner_content{
     min-height: 90vh;
     display: grid;
@@ -94,11 +108,12 @@ min-height: 100vh;
 .container h1{
    color: white;
    font-size: 4rem;
+   width: 50vw;
 }
 .container p{
    color: white;
    display: block;
-   width: 600px;
+   width: 50vw;
    margin: 1.4rem;
 }
 .btn{
@@ -115,6 +130,7 @@ min-height: 100vh;
 }
 nav{
     background: white;
+    width: 100vw;
 }
 .link a{
     font-size: 1.4rem;
@@ -131,24 +147,34 @@ nav{
 .link a:hover{
     color: red;
 }
+
     @media(max-width:800px) {
+        body{
+                height: 100%;
+                
+                
+                box-sizing: border-box;
+        
+                font-family: Arial, Helvetica, sans-serif;
+                text-transform: capitalize;
+            }
         .links_container{
     height: 0;
     overflow: hidden;
     transition: all 0.3s linear;
 }
-  }
+
 
 .show-link{
     height:200px
 }
+
+
     }
-.links_container {
-    height: auto !important;
-}
+
 .section{
 height: 80vh;
-width: 100%;
+width: 100vw;
 text-align: center;
 font-size: 1.6rem;
 }
@@ -159,6 +185,10 @@ font-size: 1.6rem;
 background: rgba(54, 36, 29, 0.716);
 height: 20vh;
 text-align: center;
+}
+.container-center{
+    width: 100vw;
+    height: 100vh;
 }
 .footer p{
     margin: auto;
